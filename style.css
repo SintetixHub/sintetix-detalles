@@ -17,7 +17,10 @@ header {
         text-align: center;
 
         & span {
-            color: rgb(12, 153, 153);
+            background: -webkit-linear-gradient(#2dd7f5, #06479c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3rem;
         }
     }
 }
