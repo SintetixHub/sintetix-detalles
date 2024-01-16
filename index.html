@@ -122,6 +122,8 @@
           <li>Helmet</li>
           <li>Bcrypt</li>
           <li>Joi</li>
+          <li>JsonWebToken</li>
+          <li>Cookie-Parser</li>
         </ul>
         <p>
           Se hará uso de la <strong>arquitectura MVC</strong> definiedo módulos que funcionan por
@@ -153,8 +155,12 @@
           Con la librería <strong>Bcrypt</strong> encriptamos la password al momento de guardarse en la base de datos. 
         </p>
 
+        <!-- cors and helmet -->
         <p>Las siguientes dos medidas de seguridad para el servidor son las librerías <strong>Cors</strong> que permite definir el cliente que puede hacer uso del servidor (Configurarse una vez tengamos la url de nuestro frontend).
         Y <strong>Helmet</strong> que se encarga de ocultar información que express por defecto comparte al momento de responder a una petición.</p>
+
+        <!-- jwt and cookie-parser -->
+        <p>La autenticaciónde usuarios la hacemos seteando una cookie con <strong>Cookie-Parser</strong> donde almacena un token creado con <strong>JsonWebToken</strong></p>
 
         <div class="deploy">
           <p>
