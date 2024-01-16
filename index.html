@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Sintetix</title>
   </head>
   <body>
@@ -124,18 +121,40 @@
           <li>Cors</li>
           <li>Helmet</li>
           <li>Bcrypt</li>
+          <li>Joi</li>
         </ul>
         <p>
-          Se hará uso de la arquitectura MVC definiedo módulos que funcionan por
+          Se hará uso de la <strong>arquitectura MVC</strong> definiedo módulos que funcionan por
           separado. siguiendo la siguiente estructura de carpetas:
         </p>
         <img src="./resources/arch.png" alt="folders structure" />
         <p>
-          Para la conexión con la base de datos se usará el ORM Sequelize,
+          Para la conexión con la base de datos se usará el ORM <strong>Sequelize</strong>,
           siguiendo el siguiente diagrama de tablas:
         </p>
 
         <img src="./resources/bd.png" alt="bd models" />
+
+        <!-- Joi validation -->
+        <p>Con la librería <strong>Joi</strong>, validamos la información recibida en cada request. Evitando entradas que impliquen un riesgo.
+          Además con está librería se comprueba que el email tenga un formato válido (texto@texto.com/net) y la password recibida contenga:
+          <ul>
+            <li>Al menos una letra minúscula.</li>
+              <li>Al menos una letra mayúscula.</li>
+              <li>Al menos un número.</li>
+              <li> longitud total de la cadena debe estar entre 8 y 30 caracteres.</li>
+          </ul>
+
+
+        </p>
+
+        <!-- bcrypt -->
+        <p>
+          Con la librería <strong>Bcrypt</strong> encriptamos la password al momento de guardarse en la base de datos. 
+        </p>
+
+        <p>Las siguientes dos medidas de seguridad para el servidor son las librerías <strong>Cors</strong> que permite definir el cliente que puede hacer uso del servidor (Configurarse una vez tengamos la url de nuestro frontend).
+        Y <strong>Helmet</strong> que se encarga de ocultar información que express por defecto comparte al momento de responder a una petición.</p>
 
         <div class="deploy">
           <p>
