@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    & h1 {
+        border-bottom: 1px solid gray;
+        font-size: 2.5rem;
+        margin: 4vh 0;
+        text-transform: uppercase;
+        text-align: center;
+
+        & span {
+            color: rgb(12, 153, 153);
+        }
+    }
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+
+    & h2 {
+        text-align: center;
+
+        font-size: 2rem;
+    }
+
+    & section {
+        border-bottom: 1px gray solid;
+        padding: 24px;
+        font-size: 1.3rem;
+        color: rgb(71, 71, 71);
+
+        & h3 {
+            font-size: 1.6rem;
+            margin-bottom: 2vh;
+            color: black;
+        }
+
+        & p {
+            margin: 1vh 0;
+        }
+
+        & ul {
+            margin: 1vh 0;
+            margin-left: 30px;
+
+            & li {
+                margin: 4px 0;
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            color: rgb(12, 153, 153);
+            font-weight: 700;
+
+        }
+
+        & a:hover {
+            color: rgb(37, 201, 201);
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2vh 0;
+    gap: 4px;
+}
+
+.devs {
+    background: #d8d8d8;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.deploy {
+    border: 1px solid gray;
+    margin: 2vh 0;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.space {
+    height: 150px;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sintetix</title>
+  </head>
+  <body>
+    <header>
+      <h1>Proyecto web <span>Sintetix</span></h1>
+    </header>
+    <main>
+      <h2>Documentación</h2>
+      <section>
+        <h3>Propósito</h3>
+        <p>
+          Sintetix es una web blog sobre tecnología y desarrollo de software
+          donde los usuarios podrán leer noticias, subir sus propios artículos,
+          tener un Hub de las tecnologias mas populares, centro de novedades y
+          mas.
+        </p>
+      </section>
+
+      <section>
+        <h3>Funcionalidades</h3>
+        <span>Un usuario que visita la página podrá:</span>
+        <ul>
+          <li>
+            Ver todos los blogs del sitio, para aprender sobre alguna
+            herramienta o novedad del ambiente
+          </li>
+          <li>Registrarse y loguearse al sitio</li>
+          <li>
+            Estando logueado, crear sus propias entradas al blog para
+            compartirlas con los demás usuarios
+          </li>
+          <li>
+            Estando logueado, dar "me gusta" y/o comentar a blogs de otros
+            usuarios
+          </li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Herramientas de gestión</h3>
+        <span
+          >Para una mejor organización del sitio se hara uso de las siguientes
+          herramientas:</span
+        >
+
+        <div class="grid">
+          <span>Repositorio de GitHub</span>
+          <a
+            href="https://github.com/SintetixHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Enlace</a
+          >
+
+          <span>Dashboard con tareas de GitHub</span>
+          <a
+            href="https://github.com/orgs/SintetixHub/projects/2"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Enlace</a
+          >
+
+          <span>Figma para prototipo</span>
+          <a
+            href="https://www.figma.com/file/WVMpR2BESt6fnmRkaGIn7r/Sintetix?type=design&node-id=3-5&mode=design&t=na7yHjbGwNwBqeQx-0"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Enlace</a
+          >
+        </div>
+      </section>
+
+      <!-- section frontend-->
+      <section>
+        <h3>Frontend</h3>
+        <p>
+          Para el desarrollo del Frontend se hará uso de las siguientes
+          tecnologías:
+        </p>
+        <ul>
+          <li>React</li>
+          <li>Vite</li>
+          <li>Tailwindcss</li>
+        </ul>
+
+        <div class="deploy">
+          <p>El despliegue en producción se hará en Vercel</p>
+          <p>Enlace <a href="#">próximamente</a></p>
+        </div>
+
+        <div class="devs">
+          <span>Devs:</span>
+          <span>Lenny</span>
+          <span>Kimi</span>
+        </div>
+      </section>
+
+      <!--section backend-->
+      <section>
+        <h3>Backend</h3>
+        <p>
+          Para el desarrollo del Backend se hará uso de las siguientes
+          tecnologías:
+        </p>
+        <ul>
+          <li>Node</li>
+          <li>Express</li>
+          <li>Sequelize</li>
+          <li>PostgreSQL</li>
+          <li>Cors</li>
+          <li>Helmet</li>
+          <li>Bcrypt</li>
+        </ul>
+        <p>
+          Se hará uso de la arquitectura MVC definiedo módulos que funcionan por
+          separado. siguiendo la siguiente estructura de carpetas:
+        </p>
+        <img src="/resources/arch.png" alt="folders structure" />
+        <p>
+          Para la conexión con la base de datos se usará el ORM Sequelize,
+          siguiendo el siguiente diagrama de tablas:
+        </p>
+
+        <img src="/resources/bd.png" alt="bd models" />
+
+        <div class="deploy">
+          <p>
+            El despliegue del servidor en producción se hará en (por definir)
+          </p>
+          <p>Enlace <a href="#">próximamente</a></p>
+        </div>
+
+        <div class="deploy">
+          <p>
+            El despliegue de la base de datos en producción se hará en (por
+            definir)
+          </p>
+          <p>Enlace <a href="#">próximamente</a></p>
+        </div>
+
+        <div class="devs">
+          <span>Devs:</span>
+          <span>Nox</span>
+          <span>Eban</span>
+        </div>
+      </section>
+
+      <section>
+        <p>Por definir</p>
+        <ul>
+          <li>Formato de blog, host de imagenes?</li>
+          <li>Proximas funcionalidades</li>
+          <li>testing</li>
+          <li>documentación</li>
+          <li>Servicio de hosting de server y db postgres</li>
+        </ul>
+      </section>
+      <div class="space"></div>
+    </main>
+  </body>
+</html>
