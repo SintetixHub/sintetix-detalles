@@ -17,7 +17,7 @@ header {
         text-align: center;
 
         & span {
-            background: -webkit-linear-gradient(#2dd7f5, #06479c);
+            background: -webkit-linear-gradient(#eba31f, #d119b9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 3rem;
